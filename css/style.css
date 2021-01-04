@@ -1,0 +1,487 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    background-image: url(../bd/bg2.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+
+/* Main Design Start */
+
+.row{
+    margin-top: 50px;
+}
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+   
+}
+
+/* Whol Container Design End */
+
+
+/* All Div common Design Start */
+.co{
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width:400px;
+    height: 350px;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+
+}
+/* All Div common Design End */
+
+/* All Div Background  Design Start */
+
+
+.bg1{
+    background-image:url(../img/bg1_01.png) ;
+    background-size: cover;
+    position: relative;
+}
+
+.bg2{
+    background-image:url(../img/bg1_02.png) ;
+    background-size: cover;
+}
+.bg3{
+    background-image:url(../img/bg1_03.png) ;
+    background-size: cover;
+}
+.bg4{
+    background-image:url(../img/bg1_04.png) ;
+    background-size: cover;
+}
+.bg5{
+    background-image:url(../img/bg1_05.png) ;
+    background-size: cover;
+}
+.bg6{
+    background-image:url(../img/bg1_06.png) ;
+    background-size: cover;
+}
+.bg7{
+    background-image:url(../img/bg1_07.png) ;
+    background-size: cover;
+}
+.bg8{
+    background-image:url(../img/bg1_08.png) ;
+    background-size: cover;
+}
+.bg9{
+    background-image:url(../img/bg1_09.png) ;
+    background-size: cover;
+}
+
+/* All Div Background  Design End */
+
+
+/* Dive Front Design Start */
+
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform 1s linear;
+}
+
+.item h1{
+    font-weight: 900;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #ffffff;
+    color:blue;
+}
+.item{
+    width:100%;
+    height: 100%;
+    transform: perspective(600px) rotateY(0deg);
+    transition: transform 1s linear;
+}
+
+.co:hover > .item{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.item p{
+    text-shadow: 0px 14px 7px #000000;
+    color: white;
+    
+}
+
+/* Dive Front Design End */
+
+/* Dive Back Design Start */
+
+
+.hoveritem{
+    
+    position: absolute;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform 1s linear;
+}
+
+
+.hoveritem{
+    left: 0;
+    top: 0;
+    width:400px;
+    height: 350px;
+    color: white;
+    border: 1px solid #000000;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+
+.co:hover > .hoveritem{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+/* Dive Back Design End */
+
+/* Font Awesome Design Start */
+
+
+.fas, .far,.fab{
+    font-size: 70px;
+    color: darkblue;
+}
+/* Font Awesome Design Start */
+
+
+
+/* Introduction Area Design Start */
+
+.ho-area{
+    display: block;
+    padding: 5%;
+    text-align: left;
+}
+.hiline{
+    overflow: hidden;
+}
+.hi{
+    display: block;
+    float: left;
+}
+.line{
+    width: 25%;
+    height: 22px;
+    margin-left: 5px;
+    border-bottom: 2px solid white;
+    float: left;
+}
+
+
+.introduction-area > h1{
+    font-size: 50px;
+    text-shadow: 4px 10px 7px #000000;
+    text-transform: uppercase;
+}
+
+.introduction-area > p{
+    font-size: 25px;
+    color: black;
+    text-align: right;
+}
+
+.introduction-area > p:last-child{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+}
+
+/* Introduction Area Design End */
+
+
+/* About Area Design Start */
+
+.about-area > h3{
+    margin: 10px 0;
+}
+
+.about-area > p{
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+}
+
+.about-area > button{
+    background-color: darkblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 3s ease-in-out;
+}
+
+.about-area > button > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.about-area>button:hover a{
+    color: darkblue;
+}
+.about-area>button:hover{
+    background-color: white;
+    border: 1px solid darkblue;
+}
+
+/* About Area Design Start */
+
+/* Skill Area Design Start */
+
+.skl{
+    height: 100%;
+    width: 100%;
+}
+.hoveritem .skills{
+    position: relative;
+    display: flex;
+    margin: 10px 10px;
+    padding: 24px 10px 18px;
+    overflow: hidden;
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);    border:1px solid #000;
+    border-radius: 8px;
+    transition: 0.5s;
+    box-sizing: border-box;
+
+}
+.hoveritem .skills::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 10;
+}
+.hoveritem .skills .name{
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color:#ffffff;
+    text-transform: uppercase;
+    
+}
+
+.hoveritem .skills .value{
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color:#ffffff;
+    text-transform: uppercase;
+    margin-top: -2;
+}
+
+.hoveritem .skills .percent{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin:0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000000;
+    overflow: hidden;
+}
+
+.hoveritem .skills .progress{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px #000000;
+    animation: progress 4s ease-in-out forwards;
+    display: none;
+}
+
+@keyframes progress{
+    from{
+        width: 0;
+    }
+}
+
+.skills:hover .progress{
+    display: block;
+}
+
+.hoveritem .skills:nth-child(2) .progress{
+    
+    background-color: #7cffcb;
+    background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+
+}
+.hoveritem .skills:nth-child(3) .progress{
+    
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    
+}
+
+.hoveritem .skills:nth-child(4) .progress{
+    
+    background-color: #7ee8fa;
+background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+
+}
+
+.skl:hover .skills{
+    opacity: 0.3;
+}
+.skl .skills:hover{
+    opacity: 1;
+}
+
+/* Skill Area Design End */
+
+
+/* Portfolio Area Design Start */
+
+
+.portfolio-title {
+    padding: 20px 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-site{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    color: black;
+    overflow: hidden;
+
+}
+
+.portfolio-item{
+    height: 48%;
+    width: 48%;
+    margin: 1%;
+    overflow: hidden;
+    background-color: hsl(120, 100%, 75%, 0.5);
+   
+}
+
+.portfolio-item h4{
+    font-size: 30px;
+    margin-top: 10px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+}
+
+.portfolio-item:nth-child(3) h4{
+    font-size: 20px;
+}
+
+.portfolio-item a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color:red;
+}
+
+.portfolio-title a {
+    text-decoration: none;
+    color:white;
+}
+
+/* Portfolio Area Design End */
+
+
+/* Blog Area Design Start */
+
+
+/* Blog Area Design End */
+
+
+
+/* Website Area Design Start */
+
+.website-link a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow: hidden;
+    margin:5px;
+}
+
+/* Website Area Design End */
+
+/* Social Area Design Start */
+
+.social-link > a .fab {
+    font-size: 130px;
+    margin:0;
+    padding: 2px 20px;
+}
+
+
+/* Social Area Design End */
+
+/* Contact Area Design Start */
+
+.contact-form h2 .fas, .contact-form h2{
+    font-size: 30px;
+    padding: 2px 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.contact-form h2:nth-child(3){
+    font-size: 25px;
+}
+
+
+.contact-form .submit-button{
+    background: rgb(48, 48, 221);
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration:none;
+    padding: 10px 80px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all 3s ease;
+    text-transform: uppercase;
+    
+}
+
+.contact-form .submit-button:hover{
+    background: darkblue;
+
+
+
+
+/* Contact Area Design End */
